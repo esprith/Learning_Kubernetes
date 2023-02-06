@@ -1,5 +1,10 @@
 # Linkedin course
-using docker, minikube, kubectl and busybox
+docker: https://docs.docker.com/engine/install/
+minikube (dev k8s cluster): https://minikube.sigs.k8s.io/docs/start/
+kubectl (k8s CLI): https://kubernetes.io/docs/reference/kubectl/
+busybox (utilities for embedded linux): https://www.busybox.net/
+snyk (security scan): https://snyk.io/
+
 
 # commands
 minikube start
@@ -60,6 +65,7 @@ Worker nodes =
     kube-proxy : ensures communication between pods and services. Comm directly with api server
 
 # hardening deployments
+https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
         securityContext:
           allowPrivilegeEscalation: false
           runAsNonRoot: true
